@@ -1,7 +1,17 @@
-import java.util.Date;
+import java.util.Scanner;
 public class SystemTime {
     public static void main(String[] args) {
-        Date now = new Date();
-        System.out.println("Now is:" + now);
+        float width;
+        float height;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter width: ");
+        width = scan.nextFloat();
+
+        System.out.println("Enter height: ");
+        height = scan.nextFloat();
+
+        float area = width * height;
+
+        System.out.println("Area is: " + area);
     }
 }
